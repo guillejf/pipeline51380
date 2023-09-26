@@ -123,6 +123,10 @@ app.use("/purchases", purchasesRouter);
 app.use("/test-chat", testChatRouter);
 app.use("/error", errorRouter);
 
+app.get("/usuarioespecial", (req, res, next) => {
+  return res.send("un usuario muy especial");
+});
+
 app.get("*", (req, res, next) => {
   try {
     CustomError.createError({
