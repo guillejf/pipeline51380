@@ -127,6 +127,10 @@ app.get("/usuarioespecial", (req, res, next) => {
   return res.send("un usuario muy especial");
 });
 
+app.get("/usuarioloco", (req, res, next) => {
+  return res.send("un usuario muy loco");
+});
+
 app.get("*", (req, res, next) => {
   try {
     CustomError.createError({
