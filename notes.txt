@@ -1,0 +1,4 @@
+branch main http://localhost:8080/
+branch qa https://testing-rydu.onrender.com/
+branch production http://sitiowebreal.com
+
